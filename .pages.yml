@@ -60,6 +60,7 @@ content:
           - name: photo
             label: トップの写真
             type: image
+            description: 写真は300KB以内にしてください（大きい写真はエラーになります）
       - name: mission
         label: 私たちの使命
         type: object
@@ -103,7 +104,7 @@ content:
           - { name: heading, label: 見出し, type: string }
           - { name: title, label: 動画のタイトル, type: string }
           - { name: src, label: 動画ファイルの場所, type: string }
-          - { name: poster, label: 最初の画像, type: image }
+          - { name: poster, label: 最初の画像, type: image, description: 写真は300KB以内にしてください }
           - { name: caption, label: 説明文, type: text }
       - name: gallery
         label: ギャラリー写真
@@ -113,6 +114,7 @@ content:
           - name: image
             label: 写真
             type: image
+            description: 写真は300KB以内にしてください（大きい写真はエラーになります）
           - name: caption
             label: 説明文
             type: string
