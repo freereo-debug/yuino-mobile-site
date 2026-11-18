@@ -161,6 +161,22 @@ content:
               - name: time
                 label: 時間（定休日なら「定休日」と入力）
                 type: string
+      - name: sns
+        label: SNS・公式LINE・地図のリンク
+        type: object
+        fields:
+          - name: line
+            label: 公式LINEのURL
+            type: string
+          - name: facebook
+            label: FacebookのURL
+            type: string
+          - name: instagram
+            label: InstagramのURL
+            type: string
+          - name: maps
+            label: GoogleマップのURL
+            type: string
       - name: cta
         label: 最後のご案内
         type: object
