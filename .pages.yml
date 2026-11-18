@@ -25,3 +25,138 @@ content:
           - name: body
             label: 本文
             type: text
+      - name: basic
+        label: 基本情報
+        type: object
+        fields:
+          - name: storeName
+            label: 店舗名
+            type: string
+          - name: phoneDisplay
+            label: 電話番号（表示用）
+            type: string
+          - name: phoneLink
+            label: 電話番号（タップ発信用・数字のみ）
+            type: string
+          - name: address
+            label: 住所
+            type: string
+          - name: hoursLine
+            label: 営業時間（一行表示）
+            type: string
+          - name: rating
+            label: 評価（例：4.9（14件のレビュー））
+            type: string
+      - name: hero
+        label: トップの見出し
+        type: object
+        fields:
+          - name: headline
+            label: 大見出し（改行できます）
+            type: text
+          - name: lead
+            label: 説明文
+            type: text
+          - name: photo
+            label: トップの写真
+            type: image
+      - name: mission
+        label: 私たちの使命
+        type: object
+        fields:
+          - name: text
+            label: 使命の本文
+            type: text
+          - name: promises
+            label: 私たちの約束（1行に1つ）
+            type: string
+            list: true
+          - name: future
+            label: 目指す未来の本文
+            type: text
+      - name: features
+        label: 特徴
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: 見出し
+            type: string
+          - name: text
+            label: 本文
+            type: text
+      - name: services
+        label: サービス
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: 見出し
+            type: string
+          - name: text
+            label: 本文
+            type: text
+      - name: gallery
+        label: ギャラリー写真
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: 写真
+            type: image
+          - name: caption
+            label: 説明文
+            type: string
+      - name: reviews
+        label: お客様の声
+        type: object
+        list: true
+        fields:
+          - name: text
+            label: 声の本文
+            type: text
+          - name: who
+            label: 投稿者（例：豊見城市在住 S.M様）
+            type: string
+      - name: faqs
+        label: よくある質問
+        type: object
+        list: true
+        fields:
+          - name: q
+            label: 質問
+            type: string
+          - name: a
+            label: 答え
+            type: text
+      - name: access
+        label: アクセス
+        type: object
+        fields:
+          - name: accessNote
+            label: 最寄り駅・アクセス
+            type: string
+          - name: parking
+            label: 駐車場
+            type: string
+          - name: hours
+            label: 営業時間（曜日ごと）
+            type: object
+            list: true
+            fields:
+              - name: day
+                label: 曜日
+                type: string
+              - name: time
+                label: 時間（定休日なら「定休日」と入力）
+                type: string
+      - name: cta
+        label: 最後のご案内
+        type: object
+        fields:
+          - name: heading
+            label: 見出し
+            type: string
+          - name: text
+            label: 本文
+            type: text

@@ -115,7 +115,7 @@
 
 <header>
   <div class="wrap header-in">
-    <a class="logo" href="#top"><small>スマホドクター</small>ゆいの輪モバイルステーション豊見城店</a>
+    <a class="logo" href="#top"><small>スマホドクター</small><span id="h-name"></span></a>
     <nav>
       <a href="#news">お知らせ</a>
       <a href="#features">特徴</a>
@@ -126,7 +126,7 @@
       <a href="#access">アクセス</a>
       <a href="#contact">お問い合わせ</a>
     </nav>
-    <a class="tel-btn" href="tel:07028263232">📞 070-2826-3232</a>
+    <a class="tel-btn" id="h-tel" href="tel:07028263232">📞 <span id="h-phone"></span></a>
   </div>
 </header>
 
@@ -138,22 +138,22 @@
 <div class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="rating"><span class="star">★</span> 4.9（14件のレビュー）</span>
-      <h1>豊見城でスマホの困りごと解決！<br>最適なモバイルライフをサポート</h1>
-      <p>当店では、スマホ修理、コーティング、相談から、格安SIMのご案内まで、お客様一人ひとりに寄り添い丁寧に対応いたします。</p>
+      <span class="rating"><span class="star">★</span> <span id="hero-rating"></span></span>
+      <h1 id="hero-headline"></h1>
+      <p id="hero-lead"></p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="tel:07028263232">無料相談を予約する</a>
+        <a class="btn btn-primary" id="hero-tel" href="tel:07028263232">無料相談を予約する</a>
         <a class="btn btn-ghost" href="#contact">まずはお気軽にお問い合わせください</a>
       </div>
       <dl class="info-card">
-        <dt>店舗名</dt><dd>ゆいの輪モバイルステーション豊見城店</dd>
-        <dt>電話番号</dt><dd>070-2826-3232</dd>
-        <dt>所在地</dt><dd>沖縄県豊見城市高安385−108</dd>
-        <dt>営業時間</dt><dd>火〜日 10:00〜18:00／月曜 定休日</dd>
+        <dt>店舗名</dt><dd id="ic-name"></dd>
+        <dt>電話番号</dt><dd id="ic-phone"></dd>
+        <dt>所在地</dt><dd id="ic-address"></dd>
+        <dt>営業時間</dt><dd id="ic-hours"></dd>
       </dl>
     </div>
     <div class="hero-photo">
-      <img src="images/store-exterior.png" alt="ゆいの輪モバイルステーション豊見城店 店舗外観">
+      <img id="hero-photo" src="images/store-exterior.png" alt="ゆいの輪モバイルステーション豊見城店 店舗外観">
     </div>
   </div>
 </div>
@@ -174,14 +174,11 @@
     <h2 class="sec-title">私たちの使命</h2>
     <div class="mission">
       <h3>私たちの使命</h3>
-      <p>私たちは、通信事業、AI事業を通して、人と人との「ゆい（結い）」を育みます。困ったときに真っ先に思い出していただける存在となり、みなさまの暮らしが豊かになるサポートをします。修理するだけではなく、売るだけでもなく、お客様の人生に寄り添い、最適なプランをご提案します。地域の皆さまとのご縁を大切にし、信頼の輪を広げ、人と人をつなぐ架け橋となります。</p>
+      <p id="mission-text"></p>
       <h3>私たちの約束</h3>
-      <ul>
-        <li>お客様を家族のように大切にして、専門知識をわかりやすく丁寧にお伝えします。</li>
-        <li>どんなことでも、全力でお手伝いし、地域に愛され、必要とされるお店であり続けます。</li>
-      </ul>
+      <ul id="mission-promises"></ul>
       <h3>私たちが目指す未来</h3>
-      <p>「スマホ、通信、AIのことなら、まず"ゆいの輪"へ。」そう言っていただける地域No.1の相談窓口となり、通信事業、AI事業を通じて、みなさまの人生を豊かにします。</p>
+      <p id="mission-future"></p>
     </div>
   </div>
 </section>
@@ -191,28 +188,7 @@
   <div class="wrap">
     <p class="sec-label">FEATURES</p>
     <h2 class="sec-title">ゆいの輪モバイルステーション豊見城店の特徴</h2>
-    <div class="cards c4">
-      <div class="card">
-        <span class="num">01</span>
-        <h3>お困りごとに寄り添います</h3>
-        <p>お客様のお困りごとを、じっくりお伺いし、その解決策をご提案します。スマホが苦手な方も安心です。</p>
-      </div>
-      <div class="card">
-        <span class="num">02</span>
-        <h3>迅速な修理サービス</h3>
-        <p>豊見城市で信頼できるスマホ修理を提供。どんなトラブルも、まずはご相談下さい。</p>
-      </div>
-      <div class="card">
-        <span class="num">03</span>
-        <h3>リラックスできる空間</h3>
-        <p>「癒しの笑顔」でお迎えし、お客様がリラックスして相談できるような心地よい空間づくりを心がけています。</p>
-      </div>
-      <div class="card">
-        <span class="num">04</span>
-        <h3>安心のサポート体制</h3>
-        <p>携帯の専門知識を持つスタッフが、スマホ修理、回線契約、スマホの操作方法などもサポート。長く安心してお使いいただけます。</p>
-      </div>
-    </div>
+    <div class="cards c4" id="features-list"></div>
   </div>
 </section>
 
@@ -221,28 +197,7 @@
   <div class="wrap">
     <p class="sec-label">SERVICES</p>
     <h2 class="sec-title">提供サービス</h2>
-    <div class="cards c3">
-      <div class="card">
-        <h3>スマホ操作サポート</h3>
-        <p>スマホの基本的な使い方から、アプリのインストール、トラブルシューティングまで、どんな些細なことでもお気軽にご相談ください。</p>
-      </div>
-      <div class="card">
-        <h3>スマホ修理、コーティング</h3>
-        <p>画面割れやバッテリー交換、コーティングなど、どんな些細なことでもお気軽にご相談ください。迅速かつ丁寧に対応します。</p>
-      </div>
-      <div class="card">
-        <h3>料金プラン見直し</h3>
-        <p>現在の料金プランが高いと感じる方へ、利用状況に合わせた最適なプランをご提案。無駄なくスマホを使いたい方は豊見城 携帯ショップへ。</p>
-      </div>
-      <div class="card">
-        <h3>データ移行・初期設定代行</h3>
-        <p>新しいスマホへのデータ移行や複雑な初期設定も、専門スタッフが丁寧に代行。購入後すぐに快適にご利用いただけます。</p>
-      </div>
-      <div class="card">
-        <h3>機種変更、格安SIM乗り換えサポート</h3>
-        <p>新しいスマホの契約、大手キャリアから格安SIMへの乗り換えを検討中の方へ、最適なプランと手続きを丁寧にご案内します。</p>
-      </div>
-    </div>
+    <div class="cards c3" id="services-list"></div>
   </div>
 </section>
 
@@ -251,16 +206,7 @@
   <div class="wrap">
     <p class="sec-label">GALLERY</p>
     <h2 class="sec-title">店舗ギャラリー</h2>
-    <div class="gallery">
-      <figure>
-        <img src="images/store-exterior.png" alt="店舗外観">
-        <figcaption>店舗外観（ゆいの輪モバイルステーション豊見城店）</figcaption>
-      </figure>
-      <figure>
-        <img src="images/store-interior.png" alt="店内・修理ブース">
-        <figcaption>店内・修理ブース</figcaption>
-      </figure>
-    </div>
+    <div class="gallery" id="gallery-list"></div>
   </div>
 </section>
 
@@ -269,24 +215,8 @@
   <div class="wrap">
     <p class="sec-label">REVIEWS</p>
     <h2 class="sec-title">お客様の声</h2>
-    <p class="rating-big"><span class="star">★</span> 4.9（14件のレビュー）</p>
-    <div class="cards c3">
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <p>「開店の日に伺いました、スマホの使い方を聞きに行きました。オーナーさんは、ビギナーの私にも、解りやすく丁寧でした。料金もリーズナブルな価格で、満足してます。駐車場もあり、便利でした。」</p>
-        <p class="who">豊見城市在住 S.M様（2026-07-18）</p>
-      </div>
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <p>「とっても気が良い素敵なお店です✨ スマホのこと、節約のこと、相談に乗っていただきました♪」</p>
-        <p class="who">那覇市 M.N様（2026-09-01）</p>
-      </div>
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <p>「スマホの画面修理めっちゃ助かりました🙏😊 プレ㊗️オープン本当に良かったですね。8／27日豊見城市にグランドオープンで、安心する癒される空間が出来ますね。来店した皆様が、笑顔いっぱいになるのが見えるような空間、沢山の皆様に愛され、宝になると感じました〜🤭。また色々なわくわく企画も楽しみに来ます。素晴らしい歌も作っていただきありがとうございました。感動しました〜💕感謝をこめて」</p>
-        <p class="who">H・K 様（2026-08-05）</p>
-      </div>
-    </div>
+    <p class="rating-big"><span class="star">★</span> <span id="reviews-rating"></span></p>
+    <div class="cards c3" id="reviews-list"></div>
   </div>
 </section>
 
@@ -295,32 +225,7 @@
   <div class="wrap">
     <p class="sec-label">FAQ</p>
     <h2 class="sec-title">よくある質問</h2>
-    <div class="faq">
-      <details>
-        <summary>ゆいの輪モバイルステーション豊見城店の営業時間はいつですか？</summary>
-        <p>営業時間は火曜日から日曜日まで、10時00分から18時00分です。月曜日は定休日となっております。</p>
-      </details>
-      <details>
-        <summary>どのようなサービスを提供していますか？</summary>
-        <p>スマホ相談、スマホ修理、コーティング、格安SIMの乗り換え相談、スマホの新規契約・機種変更サポート、料金プランの見直し、データ移行・初期設定代行、スマホ操作サポートなど、モバイルに関する幅広いサービスを提供しています。</p>
-      </details>
-      <details>
-        <summary>駐車場はありますか？</summary>
-        <p>はい、店舗前に駐車場をご用意しておりますので、お気軽にいらしてください。</p>
-      </details>
-      <details>
-        <summary>来店する際に予約は必要ですか？</summary>
-        <p>ご予約なしでもご来店いただけますが、事前にご予約いただくとスムーズにご案内できます。お電話またはウェブサイトからご予約ください。</p>
-      </details>
-      <details>
-        <summary>豊見城市以外からでも利用できますか？</summary>
-        <p>はい、豊見城市以外のお客様も大歓迎です。沖縄県内のお客様であれば、どなたでもお気軽にご来店・ご相談ください。</p>
-      </details>
-      <details>
-        <summary>料金プランの見直しだけでも相談できますか？</summary>
-        <p>はい、もちろん可能です。現在の携帯料金が高いと感じる方、最適なプランを探している方は、ぜひゆいの輪モバイルステーション豊見城店にご相談ください。お客様の利用状況に合わせて丁寧にご提案いたします。</p>
-      </details>
-    </div>
+    <div class="faq" id="faq-list"></div>
   </div>
 </section>
 
@@ -332,21 +237,15 @@
     <div class="access-grid">
       <div>
         <dl class="info-card" style="margin-top:0">
-          <dt>住所</dt><dd>沖縄県豊見城市高安385−108</dd>
-          <dt>電話番号</dt><dd><a href="tel:07028263232">070-2826-3232</a></dd>
-          <dt>最寄り駅・アクセス</dt><dd>お車でのご来店が便利です</dd>
-          <dt>駐車場</dt><dd>店舗近隣に駐車場がございます。詳細はお問い合わせください。</dd>
+          <dt>住所</dt><dd id="ac-address"></dd>
+          <dt>電話番号</dt><dd><a id="ac-phone-link" href="tel:07028263232"><span id="ac-phone"></span></a></dd>
+          <dt>最寄り駅・アクセス</dt><dd id="ac-note"></dd>
+          <dt>駐車場</dt><dd id="ac-parking"></dd>
         </dl>
         <p style="margin-top:18px"><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=%E3%82%86%E3%81%84%E3%81%AE%E8%BC%AA%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E8%B1%8A%E8%A6%8B%E5%9F%8E%E5%BA%97" target="_blank" rel="noopener">Googleマップで見る・経路案内</a></p>
       </div>
       <table class="hours">
-        <tr><th>月曜日</th><td class="closed">定休日</td></tr>
-        <tr><th>火曜日</th><td>10時00分～18時00分</td></tr>
-        <tr><th>水曜日</th><td>10時00分～18時00分</td></tr>
-        <tr><th>木曜日</th><td>10時00分～18時00分</td></tr>
-        <tr><th>金曜日</th><td>10時00分～18時00分</td></tr>
-        <tr><th>土曜日</th><td>10時00分～18時00分</td></tr>
-        <tr><th>日曜日</th><td>10時00分～18時00分</td></tr>
+        <tbody id="hours-body"></tbody>
       </table>
     </div>
   </div>
@@ -354,17 +253,17 @@
 
 <!-- CTA -->
 <div class="cta-band" id="contact">
-  <h2>スマホのお悩み、私たちにご相談ください！</h2>
-  <p>豊見城のゆいの輪モバイルステーションが、お客様に最適なモバイルプランをご提案します。まずはお気軽にご連絡ください。</p>
-  <a class="btn" href="tel:07028263232">無料相談はこちら 📞 070-2826-3232</a>
+  <h2 id="cta-heading"></h2>
+  <p id="cta-text"></p>
+  <a class="btn" id="cta-tel" href="tel:07028263232">無料相談はこちら 📞 <span id="cta-phone"></span></a>
 </div>
 
 </main>
 
 <footer>
   <div class="wrap">
-    <a class="logo" href="#top"><small style="color:var(--accent)">スマホドクター</small>ゆいの輪モバイルステーション豊見城店</a>
-    <p style="margin:10px 0 16px">沖縄県豊見城市高安385−108／070-2826-3232</p>
+    <a class="logo" href="#top"><small style="color:var(--accent)">スマホドクター</small><span id="f-name"></span></a>
+    <p style="margin:10px 0 16px" id="f-line"></p>
     <nav>
       <a href="#news">お知らせ</a>
       <a href="#features">特徴</a>
@@ -375,28 +274,85 @@
       <a href="#access">アクセス</a>
       <a href="#contact">お問い合わせ</a>
     </nav>
-    <p class="copy">©2026 ゆいの輪モバイルステーション豊見城店 | 格安SIM・スマホ乗り換え相談. All rights reserved.</p>
+    <p class="copy">©2026 <span id="f-copy"></span> | 格安SIM・スマホ乗り換え相談. All rights reserved.</p>
   </div>
 </footer>
 
 <script>
 (function(){
+  var FALLBACK = {"access":{"accessNote":"お車でのご来店が便利です","hours":[{"day":"月曜日","time":"定休日"},{"day":"火曜日","time":"10時00分～18時00分"},{"day":"水曜日","time":"10時00分～18時00分"},{"day":"木曜日","time":"10時00分～18時00分"},{"day":"金曜日","time":"10時00分～18時00分"},{"day":"土曜日","time":"10時00分～18時00分"},{"day":"日曜日","time":"10時00分～18時00分"}],"parking":"店舗近隣に駐車場がございます。詳細はお問い合わせください。"},"basic":{"address":"沖縄県豊見城市高安385−108","hoursLine":"火〜日 10:00〜18:00／月曜 定休日","phoneDisplay":"070-2826-3232","phoneLink":"07028263232","rating":"4.9（14件のレビュー）","storeName":"ゆいの輪モバイルステーション豊見城店"},"cta":{"heading":"スマホのお悩み、私たちにご相談ください！","text":"豊見城のゆいの輪モバイルステーションが、お客様に最適なモバイルプランをご提案します。まずはお気軽にご連絡ください。"},"faqs":[{"a":"営業時間は火曜日から日曜日まで、10時00分から18時00分です。月曜日は定休日となっております。","q":"ゆいの輪モバイルステーション豊見城店の営業時間はいつですか？"},{"a":"スマホ相談、スマホ修理、コーティング、格安SIMの乗り換え相談、スマホの新規契約・機種変更サポート、料金プランの見直し、データ移行・初期設定代行、スマホ操作サポートなど、モバイルに関する幅広いサービスを提供しています。","q":"どのようなサービスを提供していますか？"},{"a":"はい、店舗前に駐車場をご用意しておりますので、お気軽にいらしてください。","q":"駐車場はありますか？"},{"a":"ご予約なしでもご来店いただけますが、事前にご予約いただくとスムーズにご案内できます。お電話またはウェブサイトからご予約ください。","q":"来店する際に予約は必要ですか？"},{"a":"はい、豊見城市以外のお客様も大歓迎です。沖縄県内のお客様であれば、どなたでもお気軽にご来店・ご相談ください。","q":"豊見城市以外からでも利用できますか？"},{"a":"はい、もちろん可能です。現在の携帯料金が高いと感じる方、最適なプランを探している方は、ぜひゆいの輪モバイルステーション豊見城店にご相談ください。お客様の利用状況に合わせて丁寧にご提案いたします。","q":"料金プランの見直しだけでも相談できますか？"}],"features":[{"text":"お客様のお困りごとを、じっくりお伺いし、その解決策をご提案します。スマホが苦手な方も安心です。","title":"お困りごとに寄り添います"},{"text":"豊見城市で信頼できるスマホ修理を提供。どんなトラブルも、まずはご相談下さい。","title":"迅速な修理サービス"},{"text":"「癒しの笑顔」でお迎えし、お客様がリラックスして相談できるような心地よい空間づくりを心がけています。","title":"リラックスできる空間"},{"text":"携帯の専門知識を持つスタッフが、スマホ修理、回線契約、スマホの操作方法などもサポート。長く安心してお使いいただけます。","title":"安心のサポート体制"}],"gallery":[{"caption":"店舗外観（ゆいの輪モバイルステーション豊見城店）","image":"images/store-exterior.png"},{"caption":"店内・修理ブース","image":"images/store-interior.png"}],"hero":{"headline":"豊見城でスマホの困りごと解決！\n最適なモバイルライフをサポート","lead":"当店では、スマホ修理、コーティング、相談から、格安SIMのご案内まで、お客様一人ひとりに寄り添い丁寧に対応いたします。","photo":"images/store-exterior.png"},"mission":{"future":"「スマホ、通信、AIのことなら、まず\"ゆいの輪\"へ。」そう言っていただける地域No.1の相談窓口となり、通信事業、AI事業を通じて、みなさまの人生を豊かにします。","promises":["お客様を家族のように大切にして、専門知識をわかりやすく丁寧にお伝えします。","どんなことでも、全力でお手伝いし、地域に愛され、必要とされるお店であり続けます。"],"text":"私たちは、通信事業、AI事業を通して、人と人との「ゆい（結い）」を育みます。困ったときに真っ先に思い出していただける存在となり、みなさまの暮らしが豊かになるサポートをします。修理するだけではなく、売るだけでもなく、お客様の人生に寄り添い、最適なプランをご提案します。地域の皆さまとのご縁を大切にし、信頼の輪を広げ、人と人をつなぐ架け橋となります。"},"news":[{"body":"ゆいの輪モバイルステーション豊見城店のホームページが新しくなりました。スマホの修理・料金プランの見直し・お困りごとの相談は、お気軽にお電話ください。","date":"2026-11-18","title":"ホームページをリニューアルしました"}],"notice":"","reviews":[{"text":"「開店の日に伺いました、スマホの使い方を聞きに行きました。オーナーさんは、ビギナーの私にも、解りやすく丁寧でした。料金もリーズナブルな価格で、満足してます。駐車場もあり、便利でした。」","who":"豊見城市在住 S.M様（2026-07-18）"},{"text":"「とっても気が良い素敵なお店です✨ スマホのこと、節約のこと、相談に乗っていただきました♪」","who":"那覇市 M.N様（2026-09-01）"},{"text":"「スマホの画面修理めっちゃ助かりました🙏😊 プレ㊗️オープン本当に良かったですね。8／27日豊見城市にグランドオープンで、安心する癒される空間が出来ますね。来店した皆様が、笑顔いっぱいになるのが見えるような空間、沢山の皆様に愛され、宝になると感じました〜🤭。また色々なわくわく企画も楽しみに来ます。素晴らしい歌も作っていただきありがとうございました。感動しました〜💕感謝をこめて」","who":"H・K 様（2026-08-05）"}],"services":[{"text":"スマホの基本的な使い方から、アプリのインストール、トラブルシューティングまで、どんな些細なことでもお気軽にご相談ください。","title":"スマホ操作サポート"},{"text":"画面割れやバッテリー交換、コーティングなど、どんな些細なことでもお気軽にご相談ください。迅速かつ丁寧に対応します。","title":"スマホ修理、コーティング"},{"text":"現在の料金プランが高いと感じる方へ、利用状況に合わせた最適なプランをご提案。無駄なくスマホを使いたい方は豊見城 携帯ショップへ。","title":"料金プラン見直し"},{"text":"新しいスマホへのデータ移行や複雑な初期設定も、専門スタッフが丁寧に代行。購入後すぐに快適にご利用いただけます。","title":"データ移行・初期設定代行"},{"text":"新しいスマホの契約、大手キャリアから格安SIMへの乗り換えを検討中の方へ、最適なプランと手続きを丁寧にご案内します。","title":"機種変更、格安SIM乗り換えサポート"}]};
   function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
-  fetch("content.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(data){
-    if(data.notice && String(data.notice).trim()){
+  function setText(id,v){var el=document.getElementById(id);if(el)el.textContent=(v==null?"":v);}
+  function setHTML(id,v){var el=document.getElementById(id);if(el)el.innerHTML=v;}
+  function render(d){
+    var b=d.basic||{};
+    setText("h-name",b.storeName);
+    setText("h-phone",b.phoneDisplay);
+    setText("hero-rating",b.rating);
+    setText("ic-name",b.storeName);
+    setText("ic-phone",b.phoneDisplay);
+    setText("ic-address",b.address);
+    setText("ic-hours",b.hoursLine);
+    ["h-tel","hero-tel","ac-phone-link","cta-tel"].forEach(function(id){
+      var el=document.getElementById(id); if(el&&b.phoneLink) el.setAttribute("href","tel:"+b.phoneLink);
+    });
+    var hero=d.hero||{};
+    setHTML("hero-headline",esc(hero.headline).replace(/\n/g,"<br>"));
+    setText("hero-lead",hero.lead);
+    var hp=document.getElementById("hero-photo"); if(hp&&hero.photo) hp.setAttribute("src",hero.photo);
+    if(d.notice && String(d.notice).trim()){
       var bar=document.getElementById("notice-bar");
-      bar.textContent=data.notice;
-      bar.style.display="block";
+      bar.textContent=d.notice; bar.style.display="block";
     }
-    var items=(data.news||[]).slice().sort(function(a,b){return String(b.date).localeCompare(String(a.date));});
+    var items=(d.news||[]).slice().sort(function(a,b2){return String(b2.date).localeCompare(String(a.date));});
     if(items.length){
-      var list=document.getElementById("news-list");
-      list.innerHTML=items.map(function(n){
+      setHTML("news-list",items.map(function(n){
         return '<article class="news-item"><time>'+esc(n.date)+'</time><h3>'+esc(n.title)+'</h3><p>'+esc(n.body)+'</p></article>';
-      }).join("");
+      }).join(""));
       document.getElementById("news").style.display="block";
     }
-  }).catch(function(){});
+    var m=d.mission||{};
+    setText("mission-text",m.text);
+    setHTML("mission-promises",(m.promises||[]).map(function(p){return "<li>"+esc(p)+"</li>";}).join(""));
+    setText("mission-future",m.future);
+    setHTML("features-list",(d.features||[]).map(function(f,i){
+      var num=("0"+(i+1)).slice(-2);
+      return '<div class="card"><span class="num">'+num+'</span><h3>'+esc(f.title)+'</h3><p>'+esc(f.text)+'</p></div>';
+    }).join(""));
+    setHTML("services-list",(d.services||[]).map(function(s){
+      return '<div class="card"><h3>'+esc(s.title)+'</h3><p>'+esc(s.text)+'</p></div>';
+    }).join(""));
+    setHTML("gallery-list",(d.gallery||[]).map(function(g){
+      return '<figure><img src="'+esc(g.image)+'" alt="'+esc(g.caption)+'"><figcaption>'+esc(g.caption)+'</figcaption></figure>';
+    }).join(""));
+    setText("reviews-rating",b.rating);
+    setHTML("reviews-list",(d.reviews||[]).map(function(r){
+      return '<div class="review"><div class="stars">★★★★★</div><p>'+esc(r.text)+'</p><p class="who">'+esc(r.who)+'</p></div>';
+    }).join(""));
+    setHTML("faq-list",(d.faqs||[]).map(function(f){
+      return '<details><summary>'+esc(f.q)+'</summary><p>'+esc(f.a)+'</p></details>';
+    }).join(""));
+    var a=d.access||{};
+    setText("ac-address",b.address);
+    setText("ac-phone",b.phoneDisplay);
+    setText("ac-note",a.accessNote);
+    setText("ac-parking",a.parking);
+    setHTML("hours-body",(a.hours||[]).map(function(h){
+      var cls=(h.time==="定休日")?' class="closed"':"";
+      return '<tr><th>'+esc(h.day)+'</th><td'+cls+'>'+esc(h.time)+'</td></tr>';
+    }).join(""));
+    var c=d.cta||{};
+    setText("cta-heading",c.heading);
+    setText("cta-text",c.text);
+    setText("cta-phone",b.phoneDisplay);
+    setText("f-name",b.storeName);
+    setText("f-line",(b.address||"")+"／"+(b.phoneDisplay||""));
+    setText("f-copy",b.storeName);
+  }
+  fetch("content.json",{cache:"no-store"})
+    .then(function(r){if(!r.ok)throw new Error("bad");return r.json();})
+    .then(render)
+    .catch(function(){render(FALLBACK);});
 })();
 </script>
 </body>
