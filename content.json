@@ -89,6 +89,13 @@
       "title": "安心のサポート体制"
     }
   ],
+  "video": {
+    "heading": "動画で紹介",
+    "title": "スーパーカーの悲劇！スマホドクターが奇跡を起こす！",
+    "src": "/videos/sumaho-cm.mp4",
+    "poster": "/images/store-exterior.png",
+    "caption": "お店の紹介動画です（約40秒）。再生ボタンを押すと音が出ます。"
+  },
   "gallery": [
     {
       "image": "/images/store-exterior.png",

@@ -96,6 +96,15 @@ content:
           - name: text
             label: 本文
             type: text
+      - name: video
+        label: 紹介動画
+        type: object
+        fields:
+          - { name: heading, label: 見出し, type: string }
+          - { name: title, label: 動画のタイトル, type: string }
+          - { name: src, label: 動画ファイルの場所, type: string }
+          - { name: poster, label: 最初の画像, type: image }
+          - { name: caption, label: 説明文, type: text }
       - name: gallery
         label: ギャラリー写真
         type: object

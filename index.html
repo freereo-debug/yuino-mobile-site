@@ -67,10 +67,14 @@
   .card h3{font-size:17px;margin:8px 0 8px}
   .card p{font-size:14.5px;color:var(--muted)}
   /* gallery */
-  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-  @media(max-width:640px){.gallery{grid-template-columns:1fr}}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:640px){.gallery{grid-template-columns:1fr 1fr}}
   .gallery figure{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
   .gallery figcaption{font-size:12.5px;color:var(--muted);padding:8px 12px;background:#fff}
+  .video-box{max-width:400px;margin:0 auto;text-align:center}
+  .video-box video{width:100%;border-radius:var(--radius);background:#000;display:block}
+  .video-title{font-weight:700;margin-top:12px}
+  .video-caption{color:var(--muted);font-size:.92rem;margin-top:4px}
   /* reviews */
   .review{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px}
   .review .stars{color:var(--accent);letter-spacing:2px}
@@ -123,7 +127,7 @@
       <a href="#news">お知らせ</a>
       <a href="#features">特徴</a>
       <a href="#services">サービス</a>
-      <a href="#gallery">ギャラリー</a>
+      <a href="#video">動画</a><a href="#gallery">ギャラリー</a>
       <a href="#reviews">お客様の声</a>
       <a href="#faq">よくある質問</a>
       <a href="#access">アクセス</a>
@@ -205,6 +209,18 @@
 </section>
 
 <!-- ギャラリー -->
+<section id="video">
+  <div class="wrap">
+    <p class="sec-label">MOVIE</p>
+    <h2 class="sec-title" id="video-heading">動画で紹介</h2>
+    <div class="video-box">
+      <video id="cm-video" controls playsinline preload="metadata"></video>
+      <p class="video-title" id="video-title"></p>
+      <p class="video-caption" id="video-caption"></p>
+    </div>
+  </div>
+</section>
+
 <section id="gallery" class="alt">
   <div class="wrap">
     <p class="sec-label">GALLERY</p>
@@ -274,7 +290,7 @@
       <a href="#news">お知らせ</a>
       <a href="#features">特徴</a>
       <a href="#services">サービス</a>
-      <a href="#gallery">ギャラリー</a>
+      <a href="#video">動画</a><a href="#gallery">ギャラリー</a>
       <a href="#reviews">お客様の声</a>
       <a href="#faq">よくある質問</a>
       <a href="#access">アクセス</a>
@@ -377,6 +393,13 @@
       "title": "安心のサポート体制"
     }
   ],
+  "video": {
+    "heading": "動画で紹介",
+    "title": "スーパーカーの悲劇！スマホドクターが奇跡を起こす！",
+    "src": "/videos/sumaho-cm.mp4",
+    "poster": "/images/store-exterior.png",
+    "caption": "お店の紹介動画です（約40秒）。再生ボタンを押すと音が出ます。"
+  },
   "gallery": [
     {
       "image": "/images/store-exterior.png",
@@ -533,6 +556,13 @@
       var cls=(h.time==="定休日")?' class="closed"':"";
       return '<tr><th>'+esc(h.day)+'</th><td'+cls+'>'+esc(h.time)+'</td></tr>';
     }).join(""));
+    var v=d.video||{};
+    setText("video-heading",v.heading);
+    setText("video-title",v.title);
+    setText("video-caption",v.caption);
+    var vid=document.getElementById("cm-video");
+    if(vid&&v.src)vid.src=v.src;
+    if(vid&&v.poster)vid.poster=v.poster;
     var c=d.cta||{};
     setText("cta-heading",c.heading);
     setText("cta-text",c.text);
