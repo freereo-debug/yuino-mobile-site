@@ -75,7 +75,6 @@
   },
   "gallery": [
     {
-      "image": "/images/store-exterior.png",
       "caption": "店舗外観（ゆいの輪モバイルステーション豊見城店）"
     },
     {
@@ -101,10 +100,6 @@
     {
       "image": "/images/gallery-5.jpg",
       "caption": "お店の前で記念写真"
-    },
-    {
-      "image": "/images/gallery-6.jpg",
-      "caption": "相談カウンターの様子"
     },
     {
       "image": "/images/gallery-7.jpg",
