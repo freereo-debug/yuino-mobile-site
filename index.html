@@ -92,6 +92,13 @@
   table.hours tr:last-child th,table.hours tr:last-child td{border-bottom:none}
   table.hours th{width:38%;background:var(--bg-soft);font-weight:700}
   .closed{color:#c0392b;font-weight:700}
+  /* notice + news */
+  .notice-bar{background:var(--accent);color:#4a3200;text-align:center;padding:10px 16px;font-weight:700;font-size:14.5px}
+  .news-list{max-width:820px;margin:0 auto}
+  .news-item{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px 24px;margin-bottom:14px;text-align:left}
+  .news-item time{color:var(--teal);font-weight:700;font-size:13px}
+  .news-item h3{font-size:16.5px;margin:4px 0 6px}
+  .news-item p{font-size:14.5px;color:var(--muted);white-space:pre-line}
   /* cta */
   .cta-band{background:var(--teal);color:#fff;text-align:center;padding:56px 20px}
   .cta-band h2{font-size:25px;margin-bottom:12px}
@@ -110,6 +117,7 @@
   <div class="wrap header-in">
     <a class="logo" href="#top"><small>スマホドクター</small>ゆいの輪モバイルステーション豊見城店</a>
     <nav>
+      <a href="#news">お知らせ</a>
       <a href="#features">特徴</a>
       <a href="#services">サービス</a>
       <a href="#gallery">ギャラリー</a>
@@ -121,6 +129,8 @@
     <a class="tel-btn" href="tel:07028263232">📞 070-2826-3232</a>
   </div>
 </header>
+
+<div id="notice-bar" class="notice-bar" style="display:none"></div>
 
 <main id="top">
 
@@ -147,6 +157,15 @@
     </div>
   </div>
 </div>
+
+<!-- お知らせ -->
+<section id="news" style="display:none">
+  <div class="wrap">
+    <p class="sec-label">NEWS</p>
+    <h2 class="sec-title">お知らせ</h2>
+    <div class="news-list" id="news-list"></div>
+  </div>
+</section>
 
 <!-- ミッション -->
 <section id="mission">
@@ -347,6 +366,7 @@
     <a class="logo" href="#top"><small style="color:var(--accent)">スマホドクター</small>ゆいの輪モバイルステーション豊見城店</a>
     <p style="margin:10px 0 16px">沖縄県豊見城市高安385−108／070-2826-3232</p>
     <nav>
+      <a href="#news">お知らせ</a>
       <a href="#features">特徴</a>
       <a href="#services">サービス</a>
       <a href="#gallery">ギャラリー</a>
@@ -359,5 +379,25 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+  fetch("content.json",{cache:"no-store"}).then(function(r){return r.json();}).then(function(data){
+    if(data.notice && String(data.notice).trim()){
+      var bar=document.getElementById("notice-bar");
+      bar.textContent=data.notice;
+      bar.style.display="block";
+    }
+    var items=(data.news||[]).slice().sort(function(a,b){return String(b.date).localeCompare(String(a.date));});
+    if(items.length){
+      var list=document.getElementById("news-list");
+      list.innerHTML=items.map(function(n){
+        return '<article class="news-item"><time>'+esc(n.date)+'</time><h3>'+esc(n.title)+'</h3><p>'+esc(n.body)+'</p></article>';
+      }).join("");
+      document.getElementById("news").style.display="block";
+    }
+  }).catch(function(){});
+})();
+</script>
 </body>
 </html>

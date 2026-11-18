@@ -1,0 +1,27 @@
+media:
+  input: images
+  output: /images
+content:
+  - name: site-content
+    label: サイトの内容
+    type: file
+    path: content.json
+    format: json
+    fields:
+      - name: notice
+        label: 臨時のお知らせ（ページの一番上に帯で表示されます。空欄なら表示されません）
+        type: string
+      - name: news
+        label: お知らせ一覧
+        type: object
+        list: true
+        fields:
+          - name: date
+            label: 日付
+            type: date
+          - name: title
+            label: タイトル
+            type: string
+          - name: body
+            label: 本文
+            type: text
