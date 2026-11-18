@@ -106,6 +106,14 @@ content:
           - { name: src, label: 動画ファイルの場所, type: string }
           - { name: poster, label: 最初の画像, type: image, description: 写真は300KB以内にしてください }
           - { name: caption, label: 説明文, type: text }
+      - name: video2
+        label: 紹介動画2
+        type: object
+        fields:
+          - { name: title, label: 動画のタイトル, type: string }
+          - { name: src, label: 動画ファイルの場所, type: string }
+          - { name: poster, label: 最初の画像, type: image, description: 写真は300KB以内にしてください }
+          - { name: caption, label: 説明文, type: text }
       - name: gallery
         label: ギャラリー写真
         type: object

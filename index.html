@@ -221,6 +221,11 @@
       <p class="video-title" id="video-title"></p>
       <p class="video-caption" id="video-caption"></p>
     </div>
+    <div class="video-box" id="video2-box" style="margin-top:30px">
+      <video id="cm-video2" controls playsinline preload="metadata"></video>
+      <p class="video-title" id="video2-title"></p>
+      <p class="video-caption" id="video2-caption"></p>
+    </div>
   </div>
 </section>
 
@@ -516,6 +521,12 @@
     "facebook": "https://www.facebook.com/profile.php?id=61592841844916",
     "instagram": "https://www.instagram.com/yuinowa_mobile",
     "maps": "https://maps.app.goo.gl/yTPHNLHa2TkDpCpF6"
+  },
+  "video2": {
+    "title": "スーパーカーの悲劇！（新バージョン）",
+    "src": "/videos/sumaho-cm2.mp4",
+    "poster": "/images/video2-poster.jpg",
+    "caption": "お店の紹介動画です（約40秒）。再生ボタンを押すと音が出ます。"
   }
 };
   function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
@@ -585,6 +596,13 @@
     var vid=document.getElementById("cm-video");
     if(vid&&v.src)vid.src=v.src;
     if(vid&&v.poster)vid.poster=v.poster;
+    var v2=d.video2||{};
+    setText("video2-title",v2.title);
+    setText("video2-caption",v2.caption);
+    var vid2=document.getElementById("cm-video2");
+    if(vid2&&v2.src)vid2.src=v2.src;
+    if(vid2&&v2.poster)vid2.poster=v2.poster;
+    if(!v2.src){var b2=document.getElementById("video2-box");if(b2)b2.style.display="none";}
     var c=d.cta||{};
     setText("cta-heading",c.heading);
     setText("cta-text",c.text);
