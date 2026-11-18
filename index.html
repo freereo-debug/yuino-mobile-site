@@ -72,7 +72,8 @@
   @media(max-width:640px){.gallery{grid-template-columns:1fr 1fr}}
   .gallery figure{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
   .gallery figcaption{font-size:12.5px;color:var(--muted);padding:8px 12px;background:#fff}
-  .video-box{max-width:400px;margin:0 auto;text-align:center}
+  .video-row{display:flex;gap:24px;justify-content:center;flex-wrap:wrap}
+  .video-box{flex:1 1 280px;max-width:400px;text-align:center}
   .video-box video{width:100%;border-radius:var(--radius);background:#000;display:block}
   .video-title{font-weight:700;margin-top:12px}
   .video-caption{color:var(--muted);font-size:.92rem;margin-top:4px}
@@ -216,15 +217,17 @@
   <div class="wrap">
     <p class="sec-label">MOVIE</p>
     <h2 class="sec-title" id="video-heading">動画で紹介</h2>
+    <div class="video-row">
     <div class="video-box">
       <video id="cm-video" controls playsinline preload="metadata"></video>
       <p class="video-title" id="video-title"></p>
       <p class="video-caption" id="video-caption"></p>
     </div>
-    <div class="video-box" id="video2-box" style="margin-top:30px">
+    <div class="video-box" id="video2-box">
       <video id="cm-video2" controls playsinline preload="metadata"></video>
       <p class="video-title" id="video2-title"></p>
       <p class="video-caption" id="video2-caption"></p>
+    </div>
     </div>
   </div>
 </section>
@@ -405,8 +408,8 @@
   "video": {
     "heading": "動画で紹介",
     "title": "スーパーカーの悲劇！スマホドクターが奇跡を起こす！",
-    "src": "/videos/sumaho-cm.mp4",
-    "poster": "/images/store-exterior.png",
+    "src": "/videos/sumaho-cm2.mp4",
+    "poster": "/images/video2-poster.jpg",
     "caption": "お店の紹介動画です（約40秒）。再生ボタンを押すと音が出ます。"
   },
   "gallery": [
@@ -523,9 +526,9 @@
     "maps": "https://maps.app.goo.gl/yTPHNLHa2TkDpCpF6"
   },
   "video2": {
-    "title": "スーパーカーの悲劇！（新バージョン）",
-    "src": "/videos/sumaho-cm2.mp4",
-    "poster": "/images/video2-poster.jpg",
+    "title": "宇宙でスマホが割れた！！緊急着陸せよ！",
+    "src": "/videos/space-cm.mp4",
+    "poster": "/images/space-poster.jpg",
     "caption": "お店の紹介動画です（約40秒）。再生ボタンを押すと音が出ます。"
   }
 };

@@ -92,8 +92,8 @@
   "video": {
     "heading": "動画で紹介",
     "title": "スーパーカーの悲劇！スマホドクターが奇跡を起こす！",
-    "src": "/videos/sumaho-cm.mp4",
-    "poster": "/images/store-exterior.png",
+    "src": "/videos/sumaho-cm2.mp4",
+    "poster": "/images/video2-poster.jpg",
     "caption": "お店の紹介動画です（約40秒）。再生ボタンを押すと音が出ます。"
   },
   "gallery": [
@@ -210,9 +210,9 @@
     "maps": "https://maps.app.goo.gl/yTPHNLHa2TkDpCpF6"
   },
   "video2": {
-    "title": "スーパーカーの悲劇！（新バージョン）",
-    "src": "/videos/sumaho-cm2.mp4",
-    "poster": "/images/video2-poster.jpg",
+    "title": "宇宙でスマホが割れた！！緊急着陸せよ！",
+    "src": "/videos/space-cm.mp4",
+    "poster": "/images/space-poster.jpg",
     "caption": "お店の紹介動画です（約40秒）。再生ボタンを押すと音が出ます。"
   }
 }
