@@ -8,7 +8,7 @@
     }
   ],
   "basic": {
-    "storeName": "スマホドクターゆいの輪モバイルステーション豊見城店",
+    "storeName": "スマホドクターゆいの輪モバイル豊見城店",
     "phoneDisplay": "098-996-5075",
     "phoneLink": "098-996-5075",
     "address": "〒901-0242 沖縄県豊見城市高安385　大城アパート108号",
@@ -88,7 +88,7 @@
   "gallery": [
     {
       "image": "/images/store-exterior.png",
-      "caption": "店舗外観（ゆいの輪モバイルステーション豊見城店）"
+      "caption": "店舗外観（スマホドクターゆいの輪モバイル豊見城店）"
     },
     {
       "image": "/images/store-interior.png",
