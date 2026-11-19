@@ -11,6 +11,19 @@ content:
       - name: notice
         label: 臨時のお知らせ（ページの一番上に帯で表示されます。空欄なら表示されません）
         type: string
+      - name: noticeSettings
+        label: お知らせの文字スクロール
+        type: object
+        fields:
+          - name: scroll
+            label: 文字の動き
+            type: select
+            options:
+              - { label: 文字をスクロールさせる, value: scroll }
+              - { label: スクロールさせない, value: still }
+          - name: speed
+            label: スクロールの速さ（1周にかかる秒数・小さいほど速い）
+            type: number
       - name: news
         label: お知らせ一覧
         type: object
