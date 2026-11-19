@@ -16,11 +16,8 @@ content:
         type: object
         fields:
           - name: scroll
-            label: 文字の動き
-            type: select
-            options:
-              - { label: 文字をスクロールさせる, value: scroll }
-              - { label: スクロールさせない, value: still }
+            label: 文字をスクロールさせる（オフにすると止まります）
+            type: boolean
           - name: speed
             label: スクロールの速さ（1周にかかる秒数・小さいほど速い）
             type: number

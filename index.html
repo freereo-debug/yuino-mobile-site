@@ -547,7 +547,7 @@
     "text": "スマホドクターゆいの輪モバイル豊見城店が、お客様のお困りごとに寄り添います。またスマホ代を見直したい方には最適なモバイルプランをご提案します。まずはお気軽にご連絡ください。"
   },
   "noticeSettings": {
-    "scroll": "scroll",
+    "scroll": true,
     "speed": 20
   }
 };
@@ -575,7 +575,7 @@
       var ntxt=document.getElementById("notice-text");
       ntxt.textContent=d.notice; bar.style.display="block";
       var ns=d.noticeSettings||{};
-      if(ns.scroll==="scroll"){
+      if(ns.scroll===true||ns.scroll==="scroll"){
         bar.classList.add("scrolling");
         var sec=parseFloat(ns.speed);
         if(!(sec>=3&&sec<=180)) sec=20;
