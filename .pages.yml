@@ -15,9 +15,14 @@ content:
         label: お知らせの文字スクロール
         type: object
         fields:
-          - name: scroll
-            label: 文字をスクロールさせる（オフにすると止まります）
-            type: boolean
+          - name: mode
+            label: 文字の動き
+            type: select
+            options:
+              values:
+                - { label: 文字を横にスクロールさせる, value: 横 }
+                - { label: 文字を縦にスクロールさせる, value: 縦 }
+                - { label: スクロールさせない, value: なし }
           - name: speed
             label: スクロールの速さ（1周にかかる秒数・小さいほど速い）
             type: number
