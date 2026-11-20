@@ -20,8 +20,9 @@ content:
             type: select
             options:
               values:
-                - { label: 文字を横にスクロールさせる, value: 横 }
-                - { label: 文字を縦にスクロールさせる, value: 縦 }
+                - { label: 文字を横にスクロールさせる（右から左へ）, value: 横 }
+                - { label: 文字を縦にスクロールさせる（下から上へ）, value: 縦 }
+                - { label: 文字を縦にスクロールさせる（上から下へ）, value: 上から下 }
                 - { label: スクロールさせない, value: なし }
           - name: speed
             label: スクロールの速さ（1周にかかる秒数・小さいほど速い）
