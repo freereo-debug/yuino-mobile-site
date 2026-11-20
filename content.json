@@ -1,5 +1,9 @@
 {
-  "notice": "【本日限定】『本日、このお知らせを見た方だけ、スマホ端末1000円引きさせていただきます』",
+  "notice": "【本日限定】『本日、このお知らせを見た方だけ、スマホ端末、パソコン1000円引きさせていただきます』",
+  "noticeSettings": {
+    "mode": "横",
+    "speed": 20
+  },
   "news": [
     {
       "date": "2026-11-18",
@@ -84,6 +88,12 @@
     "src": "/videos/space-cm.mp4",
     "poster": "/images/space-poster.jpg",
     "caption": "お店の紹介動画です（約40秒）。再生ボタンを押すと音が出ます。"
+  },
+  "video3": {
+    "title": "ゆいの輪モバイルのご紹介",
+    "src": "/videos/video3.mp4",
+    "poster": "/images/video3-poster.jpg",
+    "caption": "お店の紹介動画です（約65秒）。再生ボタンを押すと音が出ます。"
   },
   "gallery": [
     {
@@ -226,15 +236,5 @@
   "cta": {
     "heading": "スマホのお悩み、私たちにご相談ください！",
     "text": "スマホドクターゆいの輪モバイル豊見城店が、お客様のお困りごとに寄り添います。またスマホ代を見直したい方には最適なモバイルプランをご提案します。まずはお気軽にご連絡ください。"
-  },
-  "noticeSettings": {
-    "mode": "横",
-    "speed": 20
-  },
-  "video3": {
-    "title": "ゆいの輪モバイルのご紹介",
-    "src": "/videos/video3.mp4",
-    "poster": "/images/video3-poster.jpg",
-    "caption": "お店の紹介動画です（約65秒）。再生ボタンを押すと音が出ます。"
   }
 }
