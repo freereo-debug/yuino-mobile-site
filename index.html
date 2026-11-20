@@ -234,6 +234,11 @@
       <p class="video-title" id="video2-title"></p>
       <p class="video-caption" id="video2-caption"></p>
     </div>
+    <div class="video-box" id="video3-box">
+      <video id="cm-video3" controls playsinline preload="metadata"></video>
+      <p class="video-title" id="video3-title"></p>
+      <p class="video-caption" id="video3-caption"></p>
+    </div>
     </div>
   </div>
 </section>
@@ -552,6 +557,12 @@
   "noticeSettings": {
     "mode": "横",
     "speed": 20
+  },
+  "video3": {
+    "title": "ゆいの輪モバイルのご紹介",
+    "src": "/videos/video3.mp4",
+    "poster": "/images/video3-poster.jpg",
+    "caption": "お店の紹介動画です（約65秒）。再生ボタンを押すと音が出ます。"
   }
 };
   function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
@@ -641,6 +652,13 @@
     if(vid2&&v2.src)vid2.src=v2.src;
     if(vid2&&v2.poster)vid2.poster=v2.poster;
     if(!v2.src){var b2=document.getElementById("video2-box");if(b2)b2.style.display="none";}
+    var v3=d.video3||{};
+    setText("video3-title",v3.title);
+    setText("video3-caption",v3.caption);
+    var vid3=document.getElementById("cm-video3");
+    if(vid3&&v3.src)vid3.src=v3.src;
+    if(vid3&&v3.poster)vid3.poster=v3.poster;
+    if(!v3.src){var b3=document.getElementById("video3-box");if(b3)b3.style.display="none";}
     var c=d.cta||{};
     setText("cta-heading",c.heading);
     setText("cta-text",c.text);
