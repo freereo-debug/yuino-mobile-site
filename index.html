@@ -245,6 +245,13 @@
   .cta-band .btn{background:#fff;color:var(--teal)}
   .sns-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}
   .sns-row a{color:#fff;border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.12);padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700}
+  /* page menu + internal links */
+  .page-menu{padding:26px 0 10px}
+  .menu-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+  .menu-links a{border:1.5px solid var(--teal);color:var(--teal);border-radius:999px;padding:8px 18px;font-weight:700;font-size:14.5px;background:#fff}
+  .menu-links a:hover{background:var(--teal-light)}
+  .section-links{margin-top:30px;text-align:center;font-size:15px;color:var(--muted)}
+  .section-links a{font-weight:700;text-decoration:underline}
   /* footer */
   footer{background:var(--ink);color:#cfdcd8;padding:44px 0 30px;font-size:14px}
   footer .logo{color:#fff}
@@ -299,6 +306,25 @@
   </div>
 </div>
 
+<!-- ページ内メニュー -->
+<div class="page-menu">
+  <div class="wrap">
+    <p class="sec-label">MENU</p>
+    <h2 class="sec-title" style="margin:8px 0 18px">メニュー</h2>
+    <div class="menu-links">
+      <a href="#mission">私たちの使命</a>
+      <a href="#features">特徴</a>
+      <a href="#services">サービス</a>
+      <a href="#video">動画で紹介</a>
+      <a href="#gallery">店舗ギャラリー</a>
+      <a href="#reviews">お客様の声</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#access">アクセス</a>
+      <a href="#contact">お問い合わせ</a>
+    </div>
+  </div>
+</div>
+
 <!-- お知らせ -->
 <section id="news" style="display:none">
   <div class="wrap">
@@ -330,6 +356,7 @@
     <p class="sec-label">FEATURES</p>
     <h2 class="sec-title">ゆいの輪モバイルステーション豊見城店の特徴</h2>
     <div class="cards c4" id="features-list"></div>
+    <p class="section-links">くわしいサービス内容は<a href="#services">サービス（メニュー）</a>へ。ご相談は<a href="#contact">お問い合わせ</a>からどうぞ。</p>
   </div>
 </section>
 
@@ -339,6 +366,7 @@
     <p class="sec-label">SERVICES</p>
     <h2 class="sec-title">提供サービス</h2>
     <div class="cards c3" id="services-list"></div>
+    <p class="section-links">サービスのご相談・ご予約は<a href="#contact">お問い合わせ</a>から。お店の場所と営業時間は<a href="#access">アクセス</a>をご覧ください。</p>
   </div>
 </section>
 
@@ -382,6 +410,7 @@
     <h2 class="sec-title">お客様の声</h2>
     <p class="rating-big"><span class="star">★</span> <span id="reviews-rating"></span></p>
     <div class="cards c3" id="reviews-list"></div>
+    <p class="section-links">スマホのお困りごとは、ぜひ<a href="#contact">お問い合わせ</a>ください。ご来店の際は<a href="#access">アクセス</a>をご確認ください。</p>
   </div>
 </section>
 
@@ -391,6 +420,7 @@
     <p class="sec-label">FAQ</p>
     <h2 class="sec-title">よくある質問</h2>
     <div class="faq" id="faq-list"></div>
+    <p class="section-links">解決しない場合は<a href="#contact">お問い合わせ</a>ください。ご来店前に<a href="#access">アクセス・営業時間</a>もあわせてご覧ください。</p>
   </div>
 </section>
 
@@ -416,6 +446,7 @@
         <p style="margin-top:14px"><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=%E3%82%86%E3%81%84%E3%81%AE%E8%BC%AA%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E8%B1%8A%E8%A6%8B%E5%9F%8E%E5%BA%97" target="_blank" rel="noopener">Googleマップで見る・経路案内</a></p>
       </div>
     </div>
+    <p class="section-links">ご来店のご予約・ご相談は<a href="#contact">お問い合わせ</a>から。サービス内容は<a href="#services">サービス（メニュー）</a>をご覧ください。</p>
   </div>
 </section>
 
